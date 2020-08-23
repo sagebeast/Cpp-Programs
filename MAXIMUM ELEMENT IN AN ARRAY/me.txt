@@ -1,0 +1,24 @@
+
+// Maximum element in a array---------
+
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	cout<<"Enter number of elements"<<endl;
+	cin>>n;
+	int A[n],max,i;
+	cout<<"Enter array elements"<<endl;
+	for(i=1;i<=sizeof(A)/sizeof(A[0]);i++){
+		cin>>A[i];
+	}
+	A[0]=max;
+	for(i=1;i<=sizeof(A)/sizeof(A[0]);i++){
+		if(A[i]>max)
+		max=A[i];
+	}
+	cout<<"The maximum number in the given  Array is =>"<<max<<endl;
+	
+	return 0;
+}

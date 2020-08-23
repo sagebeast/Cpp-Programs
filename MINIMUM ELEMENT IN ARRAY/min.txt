@@ -1,0 +1,22 @@
+//Minimum element in given arrray-----
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	cout<<"Enter number of elements"<<endl;
+	cin>>n;
+	int A[n],min,i;
+	cout<<"Enter array elements"<<endl;
+	for(i=1;i<=sizeof(A)/sizeof(A[0]);i++){
+		cin>>A[i];
+	}
+	min=A[0];
+	for(i=1;i<=sizeof(A)/sizeof(A[0]);i++){
+		if(A[i]<min)
+		min=A[i];
+	}
+	cout<<"The minimum number in the given  Array is =>"<<min<<endl;
+	
+	return 0;
+}

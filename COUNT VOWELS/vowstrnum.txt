@@ -1,0 +1,21 @@
+
+// count vowels in a give string----------
+
+#include<iostream>
+#include<cstring>
+#include<string.h>
+using namespace std;
+int main(){
+	int count=0,l;
+	char c[50] ;
+	cout<<"Enter a string"<<endl;
+	gets(c);
+	l=strlen(c);
+	for(int i=0;i<l;i++){
+		if(c[i]=='a'||c[i]=='i'||c[i]=='e'||c[i]=='o'||c[i]=='u'||c[i]=='A'||c[i]=='E'||c[i]=='I'||c[i]=='O'||c[i]=='U')
+		count++;
+	}
+	cout<<"Number of vowels are => "<<count<<endl;
+	
+	return 0;
+}
