@@ -1,0 +1,27 @@
+//CONVERT LOWERCASE TO UPPERCASE AND VICE VERSA----
+
+#include<iostream>
+#include<cstring>
+#include<string.h>
+using namespace std;
+int main()
+{
+	int i,l;
+	char str[50];
+	cout<<"Enter a string"<<endl;
+	gets(str);
+	l=strlen(str);
+	for(i=0;i<l;i++){
+		if(str[i]>=65&&str[i]<=90){
+			str[i]=str[i]+32;
+		}else if(str[i]>=97&&str[i]<=122){
+				str[i]=str[i]-32;
+		}
+		else{
+			cout<<"Invalid string"<<endl;
+		}
+	}
+	cout<<"Converted string =>"<<str<<endl;
+	return 0;
+	
+}
