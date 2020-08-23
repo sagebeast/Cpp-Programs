@@ -1,0 +1,38 @@
+//sunstring inside string------------
+
+#include<iostream>
+#include<cstring>
+#include<string.h>
+using namespace std;
+int indexOfstring(char str[],char substr[]);
+int indexOfstring(char str[],char substr[]){
+		int i,j,k,l;
+      l=strlen(substr);
+	 for(i=0;str[i+l-1];i++){
+		k=i;
+		for(j=0;j<=l-1;j++){
+			if(str[k]!=substr[j])
+			break;
+			k++;
+			
+		}
+		if(j==l)
+		return (i);
+	}
+	return (-1);
+}
+int main(){
+     int index;
+	 index=indexOfstring("abababbbaabbababbbaa","aabb");
+	if(index==-1){
+		cout<<"Substring not found"<<endl;
+	}else{
+		cout<<"Substring found at index "<<index;
+	}
+	
+	
+	
+	
+	
+	return 0;
+}
