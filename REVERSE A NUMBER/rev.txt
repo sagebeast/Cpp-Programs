@@ -1,0 +1,22 @@
+//#28 reverse a number--------------
+
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n,rem,y;
+	cout<<"Enter a  number"<<endl;
+	cin>>n;
+	
+	while(n!=0){
+		rem=n%10;
+		y=y*10+rem;
+		n=n/10;
+	}
+	cout<<"Reversed number is "<<y<<endl;
+	
+	
+	return 0;
+}
