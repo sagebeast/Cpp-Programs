@@ -1,0 +1,38 @@
+
+
+//NATURE AND ROOTS OF QUADRATIC EQUATION 
+
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main(){
+	int a,b,c;
+	float D,ROOT1,ROOT2;
+	cout<<"Enter coefficient of x^2"<<endl;
+	cin>>a;
+	cout<<"Enter coefficient of x"<<endl;
+	cin>>b;
+	cout<<"Enter coefficient of constant-term"<<endl;
+	cin>>c;
+	D=(b*b)-(4*a*c);
+	if(D>0){
+		cout<<"Roots are Real and Distinct"<<endl;
+	}else if(D==0){
+		cout<<"Roots are equal"<<endl;
+	}else{
+		cout<<"Roots are Imaginary"<<endl;
+	}
+	
+	ROOT1= (-b + sqrt(D))/(2*a);
+	ROOT2= (-b - sqrt(D))/(2*a);
+	cout<<"Roots of quadratic equation =>"<<a<<"x^2"<<" + "<<b<<"x + "<<c<<endl;
+	cout<<ROOT1<<" and "<<ROOT2<<endl;
+	
+	
+	
+	return 0;
+	
+	
+	
+} 

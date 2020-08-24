@@ -1,0 +1,47 @@
+
+//EXPRESS A GIVEN NUMBER AS THE SUM OF TWO PRIME NUMBERS------------
+
+
+#include<iostream>
+using namespace std;
+int nextPrime(int);
+int isPrime(int);
+int nextPrime(int n){
+	do
+	n++;
+	while(!isPrime(n));
+	return n;
+	
+}
+int isPrime(int n){
+	
+	int i;
+	for(i=2;i<n;i++){
+		if(n%i==0)
+		return 0;
+	}
+		return 1;
+	
+}
+
+int main(){
+	int n,i;
+	cout<<"Enter a number"<<endl;
+	cin>>n;
+	for(i=2;i<=(n-i);i=nextPrime(i)){
+		if(isPrime(n-i)){
+			cout<<i<<" + "<<n-i<<" = "<<n<<endl;
+		}
+         		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
